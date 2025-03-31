@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# Ruta requerida por el test automático
+# Ruta test
 @app.route('/hello', methods=['GET'])
 def hello():
     return jsonify({"message": "Hello World"})
